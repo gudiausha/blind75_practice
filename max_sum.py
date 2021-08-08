@@ -19,4 +19,18 @@
         return(max_sum)'''
 
 
+#sol same as max_prod.py
+
+class Solution(object):
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        ans , maxp, minp = nums[0], 0, 0   
+        for num in nums:            
+            maxp, minp = max(num, minp+num, maxp+num), min(num, minp+num, maxp+num)
+            ans = max(ans, maxp)
+        return ans
+        
         
