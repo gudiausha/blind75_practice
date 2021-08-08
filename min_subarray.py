@@ -16,3 +16,6 @@ class Solution(object):
                 high = mid
                 
         return nums[high]
+
+    #https://medium.com/@samip.sharma963/binary-search-and-its-big-o-3333d13bd6ec
+    #https://hackernoon.com/binary-search-in-detail-914944a1434a
